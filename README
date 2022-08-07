@@ -1,0 +1,9 @@
+Code a 2D Game Engine using Java
+
+1. Setup Game Window
+- Create Window.java to render game window
+- Configure game window settings using lwjgl - https://www.lwjgl.org/guide
+
+2. Event Handling
+- Setup key listeners and mouse listeners
+- TODO set up game pad functionality using joystick listeners: https://www.glfw.org/docs/latest/input_guide.html#joystick
