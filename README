@@ -12,4 +12,10 @@ Code a 2D Game Engine using Java
 - Setup scene managers
 - Setup delta time variable
 
-4. How to Program the GPU (TODO)
+4. Program the GPU
+- Added assets\shaders\default.glsl
+- Setup vertex shader, fragment shader
+- Compiled and linked shaders in LevelEditorScene
+- Generated vertex array object, vertex buffer object, and element buffer object and sent to GPU in LevelEditorScene
+
+5. Regexes & Shaders (TODO)
