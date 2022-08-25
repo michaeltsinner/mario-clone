@@ -18,5 +18,15 @@ Code a 2D Game Engine using Java
 - Compiled and linked shaders in LevelEditorScene
 - Generated vertex array object, vertex buffer object, and element buffer object and sent to GPU in LevelEditorScene
 
-5. Regexes & Shaders
+5. Regex & Shaders
 - Introduced shader abstraction
+- Created Shader class in renderer directory
+
+6. Game Camera
+- Created camera class
+- Set up orthogonal camera for 2d game
+
+7. GLSL Shaders
+- Update GLSL shader class
+- Uploaded shaders to GPU
+
