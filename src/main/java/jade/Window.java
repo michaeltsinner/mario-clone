@@ -39,10 +39,12 @@ public class Window {
             case 0:
                 currentScene = new LevelEditorScene();
                 currentScene.init();
+                currentScene.start();
                 break;
             case 1:
                 currentScene = new LevelScene();
                 currentScene.init();
+                currentScene.start();
                 break;
             default:
                 assert false: "Unknown Scene '" + newScene + "'";
@@ -55,6 +57,10 @@ public class Window {
             Window.window = new Window();
         }
         return Window.window;
+    }
+
+    public static Scene getScene() {
+        return get().currentScene;
     }
 
     public void run() {
@@ -72,7 +78,7 @@ public class Window {
         glfwSetErrorCallback(null).free();
     }
     public void init() {
-        // Setup an error callback
+        // Set up an error callback
         // Default implementation prints the error message in System.err
         GLFWErrorCallback.createPrint(System.err).set();
 

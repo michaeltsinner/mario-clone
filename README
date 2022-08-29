@@ -30,3 +30,17 @@ Code a 2D Game Engine using Java
 - Update GLSL shader class
 - Uploaded shaders to GPU
 
+8. Texture Loading
+- Store texture into an array
+- Bind and specify parameters for specific textures (blur / pixelate, wrap / stretch)
+- Specify format and upload texture to GPU
+
+9. Entity Component System
+- Game Design Paradigms: OOP -> Component Pattern -> Data-Oriented Design -> ECS
+- Added ability to create components and add them to game objects
+- Can find components from within other components using game objects
+
+10. Batch Rendering
+- Renderer / RenderBatch
+- Implement batching to render all tiles at once instead of multiple draw calls or passes (improves frame rate)
+
