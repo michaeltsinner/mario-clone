@@ -44,3 +44,17 @@ Code a 2D Game Engine using Java
 - Renderer / RenderBatch
 - Implement batching to render all tiles at once instead of multiple draw calls or passes (improves frame rate)
 
+11. Resource Management
+- Created an asset pool to reduce memory burden
+
+12. Texture Batching
+- Now able to render textures using
+- Updated shader
+
+13. Sprite Sheets
+- Implement use of sprite sheets to sample multiple sprites from one texture
+- Individual sprites can now be referenced from a spritesheet by indexing the desired sprite in LevelEditorScene
+
+14. Dirty Flags (TODO)
+- Incorporation of 'dirty flags' to tell the GPU that a sprite has changed
+- Allows for sprite animation

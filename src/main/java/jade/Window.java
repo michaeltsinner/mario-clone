@@ -4,7 +4,6 @@ import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
-import util.Time;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
@@ -121,8 +120,8 @@ public class Window {
     }
 
     public void loop() {
-        float beginTime = Time.getTime();
-        float endTime = Time.getTime();
+        float beginTime = (float)glfwGetTime();
+        float endTime;
         float dt = -1.0f;
 
         while(!glfwWindowShouldClose(glfwWindow)) {
@@ -139,7 +138,7 @@ public class Window {
             glfwSwapBuffers(glfwWindow);
 
             // The position of recording time matters: needs to be at the end in case of lag spikes / system interrupts
-            endTime = Time.getTime();
+            endTime = (float)glfwGetTime();
             dt = endTime - beginTime;
             beginTime = endTime;
         }
