@@ -1,4 +1,5 @@
 Code a 2D Game Engine using Java
+https://www.youtube.com/watch?v=025QFeZfeyM&t=22924s
 
 1. Setup Game Window
 - Create Window.java to render game window
@@ -55,6 +56,11 @@ Code a 2D Game Engine using Java
 - Implement use of sprite sheets to sample multiple sprites from one texture
 - Individual sprites can now be referenced from a spritesheet by indexing the desired sprite in LevelEditorScene
 
-14. Dirty Flags (TODO)
-- Incorporation of 'dirty flags' to tell the GPU that a sprite has changed
+14. Dirty Flags
+- Incorporation of 'dirty flags' to tell the GPU that a sprite has changed\
+- Same concept as HTML documents where if any element on the site has changed only that portion gets updated
 - Allows for sprite animation
+
+15. Z-Index & Alpha Blend
+- Setup z-indexing and alpha blending
+- Setup z-index sorting on render batches to control overlapping texture order
